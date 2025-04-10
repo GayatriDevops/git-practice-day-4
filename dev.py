@@ -7,7 +7,7 @@ def lambda_handler(event, context):
         response = ec2.run_instances(
             ImageId='ami-0abcdef1234567890',  # Replace with a valid AMI ID
             InstanceType='t2.micro',
-            KeyName='your-key-pair',  # Replace with your EC2 key pair name
+            KeyName='aws-key',  # Replace with your EC2 key pair name
             MinCount=1,
             MaxCount=1,
             SecurityGroupIds=['sg-0123456789abcdef0'],  # Replace with your security group ID
